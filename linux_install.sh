@@ -25,8 +25,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme/  &&  ./install.sh -N mojave
 
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
-cd WhiteSur-icon-theme/ &&./install.sh
+git clone https://github.com/vinceliuice/McMojave-circle.git
+cd McMojave-circle/ &&./install.sh
 gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Light"
-gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
+gsettings set org.gnome.desktop.interface icon-theme "McMojave-circle-dark"
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | awk -F \'/\' '{print $NF}')/ font "Meslo LG M Regular for Powerline 12"

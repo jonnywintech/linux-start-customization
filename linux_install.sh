@@ -2,8 +2,13 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install snapd git -y
-sudo snap install code --classic
 sudo apt install curl gnome-tweaks -y
+
+curl -LO https://vscode.download.prss.microsoft.com/dbazure/download/stable/863d2581ecda6849923a2118d93a088b0745d9d6/code_1.87.2-1709912201_amd64.deb
+sleep 2
+sudo chmod +x code_1.87.2-1709912201_amd64.deb
+sudo dpkg -i code_1.87.2-1709912201_amd64.deb
+
 curl -LO https://github.com/sqlectron/sqlectron-gui/releases/download/v1.38.0/sqlectron_1.38.0_amd64.deb
 sleep 2
 sudo chmod +x sqlectron_1.38.0_amd64.deb
